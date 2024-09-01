@@ -1,31 +1,11 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  overflow: scroll;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +15,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.coffeeItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.card {
+  border: 2px solid rgb(125, 121, 121);
+}
+
+.btn-info {
+  width: 8rem;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.searchGrid {
+  display: flex;
+  justify-content: end;
+  padding-right: 4rem;
+}
+
+.searchField {
+  display: flex;
+  gap: 5px;
 }
